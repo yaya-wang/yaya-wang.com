@@ -1,0 +1,231 @@
+body {
+	width: 80%;
+	margin: 30px auto;
+	background: url(http://i.imgur.com/DYPND4X.gif);
+	background-size: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	color: #fff;
+	font-size: 24px;
+	left: 0;
+}
+
+h1 {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.1em;
+	color: #000;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+p {
+	font-size: .6em;
+	color: #000;
+	letter-spacing: 1.1px;
+	line-height: 1.2em;
+}
+
+a {
+	font-family: garamond;
+	font-style: italic;
+	font-size: 1em;
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: yellow;
+	text-decoration: underline;
+}
+
+.top {
+	left: 0;
+	height: 100vh;
+}
+
+#titles {
+	position: absolute;
+	width: 80vw;
+	height: 30em;
+	margin: 0 auto;
+	bottom: 100px;
+	font-size: 180%;
+	text-align: center;
+	overflow: hidden;
+	transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-o-transform-origin: 50% 100%;
+
+	transform: perspective(200px) rotateX(20deg);
+	-webkit-transform: perspective(200px) rotateX(20deg);
+	-moz-transform: perspective(200px) rotateX(20deg);
+	-ms-transform: perspective(200px) rotateX(20deg);
+	-o-transform: perspective(200px) rotateX(20deg);
+}
+
+#titles:after {
+	position: absolute;
+	content: ' ';
+	bottom: 60%;
+	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -o-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	pointer-events: none;
+}
+
+#titlecontent {
+	position: inherit;
+	color: yellow;
+	line-height: 2em;
+	top: 100%;
+	left: 0;
+	margin: 0;
+	animation: scroll 40s linear 5s infinite;
+	-webkit-animation: scroll 40s linear 5s infinite;
+	-moz-animation: scroll 40s linear 5s infinite;
+	-ms-animation: scroll 40s linear 5s infinite;
+	-o-animation: scroll 40s linear 5s infinite;
+	animation-delay: 0s;
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-ms-animation-delay: 0s;
+	-o-animation-delay: 0s;
+}
+
+#titlecontent p {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: .4em;
+	color: yellow;
+}
+
+@keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+@-webkit-keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+.main {
+	float: left;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20%;
+	clear: both;
+}
+
+.square {
+	float: left;
+	width: 35vw;
+	height: 25vw;
+	box-shadow: 10px 10px #ccc;
+}
+
+.triangle {
+	position: absolute;
+	right: 10%;
+	width: 45vw;
+	border-left: 20vw solid transparent;
+	border-bottom: 25vw solid #fff;
+	box-shadow: 10px 10px #ccc;
+	clear: both;
+}
+.triangle-arrow {
+	position: absolute;
+	left: 40%;
+	text-align: center;
+	margin: 3% auto;
+	z-index: 100000;
+}
+
+.text {
+	left: 10%;
+	margin: 3% 0 5% 0;
+	text-align: left;
+	position: inherit;
+	width: 70%;
+	height: 22vw;
+	overflow: scroll; 
+}
+
+.bottom {
+	clear: both;
+	margin-top: 80%;
+}
+
+.circle {
+	position: inherit;
+	width: 50vw;
+	height: 50vw;
+	margin: 150px auto;
+	border-radius: 50%;
+	border: solid 5px #fff; 
+	box-shadow: 10px 10px #ccc;
+	overflow: scroll;
+	background: #000; 
+}
+
+#circle-arrow {
+	position: absolute;
+	left: 50%;
+	text-align: center;
+	margin: 1% auto;
+}
+
+.circle img {
+	width: 100%
+}
+
+
+footer {
+	margin: 40% 10% 20% 10%;
+	clear: both;
+}
+
+.rectangle-left {
+	float: left;
+	width: 45%;
+}
+
+.rectangle-right {
+	float: right;
+	width: 45%;
+}
+
+.rectangle {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto; 
+	padding: 20px 0;
+	background: #000;
+	border: solid 5px #fff; 
+	box-shadow: 10px 10px #ccc;
+}
+
+.credit {
+	clear: both;
+	position: absolute;
+	font-family: "Lucida Console", Monaco, monospace;
+	margin: 0 auto;
+	left: 0;
+	width: 100%;
+	margin-top: 50vh;
+	text-align: center;
+	font-size: .6em;
+	line-height: 1.7em;
+}
+
+.credit a {
+	font-family: "Lucida Console", Monaco, monospace;
+}
