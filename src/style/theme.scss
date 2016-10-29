@@ -3,16 +3,14 @@ $color-accent: #ffe9e6;
 $color-light: #808080;
 $color-text: #4f4f4f;
 
-
 html {
-  border-top: 10px solid $color-accent;
+  border: 10px solid $color-accent;
 }
 
 body {
   margin: 0;
   font-size: 18px;
   font-family: "Karla", sans-serif;
-  padding: 0 50px;
   letter-spacing: .75px;
   -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -20,6 +18,12 @@ body {
 a {
   color: $color-primary;
   text-decoration: none;
+  cursor: pointer;
+
+  &:focus {
+    background: $color-accent;
+    border: 1px dotted $color-primary;
+  }
 }
 
 em, cite, i {
@@ -40,25 +44,26 @@ ul, ol, li {
 
 /*Global Nav*/
 header {
-  height: 60px;
-  padding-top: 40px;
+  height: 100vh;
+  padding: 0 50px;
 
   /*YAYA LOGO img*/
   .logo {
-    float: left;
+    padding-top: 40px;
     display: block;
 
     img {
+      width: 50px;
       padding-right: 10px;
       float: left;
     }
-  }
 
-  p {
-    display: inline-block;
-    padding-top: 26px;
-    color: $color-light;
-    font-size: 16px;
+    p {
+      display: inline-block;
+      padding-top: 18px;
+      color: $color-light;
+      font-size: 16px;
+    }
   }
 
   #mandarin {
@@ -66,82 +71,17 @@ header {
     display: inline;
     font-size: .75em;
   }
-}
 
-.banner {
-  margin: 30vh 0;
-  // .banner-box {
-  //   max-width: 600px;
-  //   display: block;
-  //   margin: 0 auto;
-  //   overflow: hidden;
-  // }
-  //
-  // img {
-  //   cursor: default;
-  // }
-  //
-  // h1 {
-  //   margin: 0;
-  //   font-size: 2em;
-  // }
-  //
-  // #head {
-  //   width: 200px;
-  //   margin: 40px 0 0 0;
-  //   float: left;
-  //
-  //   img {
-  //     width: 180px;
-  //     border-radius: 50%;
-  //   }
-  // }
-  //
-  // #gfy {
-  //   position: absolute;
-  //   width: 180px;
-  //   margin: 40px 0 0 0;
-  //
-  //   img {
-  //     width: 100%;
-  //     border-radius: 100%;
-  //   }
-  //
-  //   .wormhole {
-  //     font-size: .7em;
-  //     color: #fff;
-  //     position: absolute;
-  //     top: 60px;
-  //     text-align: center;
-  //
-  //     a {
-  //       text-decoration: underline;
-  //
-  //       &:hover {
-  //         color: yellow;
-  //       }
-  //     }
-  //   }
-  // }
+  .banner {
+    margin: 25vh 0;
 
-  // h2 {
-  //   font-weight: 400;
-  //   font-size: 1.1em;
-  //   margin-bottom: 10px;
-  // }
-  //
-  // #mandarin {
-  //   display: inline;
-  //   font-size: .85em;
-  // }
+    h1 {
+      font-size: 2em;
+    }
 
-  h1 {
-    font-size: 2em;
-  }
-
-  p {
-    color: $color-light;
-    margin-bottom: 80px;
+    p {
+      color: $color-light;
+    }
   }
 
   .main-nav {
@@ -159,7 +99,7 @@ header {
       display: inline-block;
       color: $color-light;
       text-decoration: none;
-      padding-bottom: 5px;
+      padding-bottom: 3px;
       border-bottom: 2px solid $color-light;
 
       &:hover {
@@ -170,37 +110,24 @@ header {
   }
 }
 
-dt img {
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-}
-
 .container {
   margin-bottom: 80px;
+  padding: 0 50px;
 
-  .work-box {
-    padding-top: 40px;
-    width: 420px;
-    position: relative;
-    display: inline-block;
+  tr {
+    display: inline-flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    width: 100%;
 
-    img {
-      width: 100%;
+    td {
+      background-color: $color-accent;
+      width: 50%;
+
+      &:first-child {
+        margin-right: 20px;
+      }
     }
-  }
-}
-
-.resume {
-  margin: 20px auto;
-  width: 180px;
-  padding: 10px 16px;
-  background: rgba(255, 97, 77, 1);
-  text-align: center;
-  color: white;
-
-  &:hover {
-    opacity: .7;
   }
 }
 
@@ -260,6 +187,43 @@ dt img {
 //   }
 // }
 
+footer {
+  background-color: $color-accent;
+  width: 100%;
+  height: 400px;
+
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  #head {
+    float: left;
+  }
+
+  #gfy {
+    position: absolute;
+
+    .wormhole {
+      position: absolute;
+      top: 70px;
+      text-align: center;
+
+      a {
+        font-size: 1.5em;
+        color: yellow;
+        text-decoration: underline;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+}
+
 .exp-box {
   padding: 40px 0;
   margin: 0 auto;
@@ -307,58 +271,72 @@ dt img {
 }
 
 
-/*---- FOOTER ----*/
-footer {
-  bottom: 0;
-  background: rgba(128, 128, 128, 1);
-  clear: both;
-  overflow: hidden;
-  padding: 30px 15%;
+.resume {
+  margin: 20px auto;
+  width: 180px;
+  padding: 10px 16px;
+  background: rgba(255, 97, 77, 1);
+  text-align: center;
+  color: white;
 
-  p {
-    margin: 0;
-  }
-
-  li {
-    position: relative;
-    display: inline;
-    padding: 0 20px 0 0;
-    list-style-type: none;
-    clear: both;
-  }
-
-  a:hover {
+  &:hover {
     opacity: .7;
   }
-
-  .footer-box {
-    max-width: 980px;
-    margin: 0 auto;
-  }
-
-  .email {
-    float: right;
-    padding: 10px 0;
-    width: 180px;
-    background: rgba(255, 97, 77, 1);
-    text-align: center;
-    color: white;
-  }
-
-  .contact {
-    float: left;
-    text-align: left;
-    color: white;
-    font-size: 1em;
-  }
-
-  .copyright {
-    font-size: .7em;
-    color: white;
-    clear:both;
-    text-align: left;
-  }
 }
+
+
+// /*---- FOOTER ----*/
+// footer {
+//   bottom: 0;
+//   background: rgba(128, 128, 128, 1);
+//   clear: both;
+//   overflow: hidden;
+//   padding: 30px 15%;
+//
+//   p {
+//     margin: 0;
+//   }
+//
+//   li {
+//     position: relative;
+//     display: inline;
+//     padding: 0 20px 0 0;
+//     list-style-type: none;
+//     clear: both;
+//   }
+//
+//   a:hover {
+//     opacity: .7;
+//   }
+//
+//   .footer-box {
+//     max-width: 980px;
+//     margin: 0 auto;
+//   }
+//
+//   .email {
+//     float: right;
+//     padding: 10px 0;
+//     width: 180px;
+//     background: rgba(255, 97, 77, 1);
+//     text-align: center;
+//     color: white;
+//   }
+//
+//   .contact {
+//     float: left;
+//     text-align: left;
+//     color: white;
+//     font-size: 1em;
+//   }
+//
+//   .copyright {
+//     font-size: .7em;
+//     color: white;
+//     clear:both;
+//     text-align: left;
+//   }
+// }
 
 
 /*---- WORK ----*/

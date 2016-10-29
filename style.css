@@ -1,17 +1,20 @@
 html {
-  border-top: 10px solid #ffe9e6; }
+  border: 10px solid #ffe9e6; }
 
 body {
   margin: 0;
   font-size: 18px;
   font-family: "Karla", sans-serif;
-  padding: 0 50px;
   letter-spacing: .75px;
   -webkit-font-smoothing: subpixel-antialiased; }
 
 a {
   color: #ff614d;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
+  a:focus {
+    background: #ffe9e6;
+    border: 1px dotted #ff614d; }
 
 em, cite, i {
   font-style: italic; }
@@ -27,71 +30,82 @@ ul, ol, li {
 
 /*Global Nav*/
 header {
-  height: 60px;
-  padding-top: 40px;
+  height: 100vh;
+  padding: 0 50px;
   /*YAYA LOGO img*/ }
   header .logo {
-    float: left;
+    padding-top: 40px;
     display: block; }
     header .logo img {
+      width: 50px;
       padding-right: 10px;
       float: left; }
-  header p {
-    display: inline-block;
-    padding-top: 26px;
-    color: #808080;
-    font-size: 16px; }
+    header .logo p {
+      display: inline-block;
+      padding-top: 18px;
+      color: #808080;
+      font-size: 16px; }
   header #mandarin {
     color: #808080;
     display: inline;
     font-size: .75em; }
-
-.banner {
-  margin: 30vh 0; }
-  .banner h1 {
-    font-size: 2em; }
-  .banner p {
-    color: #808080;
-    margin-bottom: 80px; }
-  .banner .main-nav ul {
+  header .banner {
+    margin: 25vh 0; }
+    header .banner h1 {
+      font-size: 2em; }
+    header .banner p {
+      color: #808080; }
+  header .main-nav ul {
     padding: 0; }
-  .banner .main-nav li {
+  header .main-nav li {
     padding-right: 40px;
     display: inline-block; }
-  .banner .main-nav a {
+  header .main-nav a {
     display: inline-block;
     color: #808080;
     text-decoration: none;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
     border-bottom: 2px solid #808080; }
-    .banner .main-nav a:hover {
+    header .main-nav a:hover {
       transition: border .1s;
       border-bottom: 4px solid #808080; }
 
-dt img {
-  margin: 0 auto;
-  display: block;
-  text-align: center; }
-
 .container {
-  margin-bottom: 80px; }
-  .container .work-box {
-    padding-top: 40px;
-    width: 420px;
-    position: relative;
-    display: inline-block; }
-    .container .work-box img {
-      width: 100%; }
+  margin-bottom: 80px;
+  padding: 0 50px; }
+  .container tr {
+    display: inline-flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    width: 100%; }
+    .container tr td {
+      background-color: #ffe9e6;
+      width: 50%; }
+      .container tr td:first-child {
+        margin-right: 20px; }
 
-.resume {
-  margin: 20px auto;
-  width: 180px;
-  padding: 10px 16px;
-  background: #ff614d;
-  text-align: center;
-  color: white; }
-  .resume:hover {
-    opacity: .7; }
+footer {
+  background-color: #ffe9e6;
+  width: 100%;
+  height: 400px; }
+  footer img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; }
+  footer #head {
+    float: left; }
+  footer #gfy {
+    position: absolute; }
+    footer #gfy .wormhole {
+      position: absolute;
+      top: 70px;
+      text-align: center; }
+      footer #gfy .wormhole a {
+        font-size: 1.5em;
+        color: yellow;
+        text-decoration: underline; }
+        footer #gfy .wormhole a:hover {
+          color: white; }
 
 .exp-box {
   padding: 40px 0;
@@ -125,43 +139,15 @@ dt img {
   float: right;
   text-align: left; }
 
-/*---- FOOTER ----*/
-footer {
-  bottom: 0;
-  background: gray;
-  clear: both;
-  overflow: hidden;
-  padding: 30px 15%; }
-  footer p {
-    margin: 0; }
-  footer li {
-    position: relative;
-    display: inline;
-    padding: 0 20px 0 0;
-    list-style-type: none;
-    clear: both; }
-  footer a:hover {
+.resume {
+  margin: 20px auto;
+  width: 180px;
+  padding: 10px 16px;
+  background: #ff614d;
+  text-align: center;
+  color: white; }
+  .resume:hover {
     opacity: .7; }
-  footer .footer-box {
-    max-width: 980px;
-    margin: 0 auto; }
-  footer .email {
-    float: right;
-    padding: 10px 0;
-    width: 180px;
-    background: #ff614d;
-    text-align: center;
-    color: white; }
-  footer .contact {
-    float: left;
-    text-align: left;
-    color: white;
-    font-size: 1em; }
-  footer .copyright {
-    font-size: .7em;
-    color: white;
-    clear: both;
-    text-align: left; }
 
 /*---- WORK ----*/
 /*Slideshow*/

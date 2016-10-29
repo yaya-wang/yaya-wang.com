@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Karla|Lora" rel="stylesheet">
   <link rel="stylesheet" href="src/home/font-awesome/css/font-awesome.min.css">
 
-  <!-- <script>
+  <script>
     function wormhole(){
       document.getElementById('gfy').style.visibility = 'visible';
     }
@@ -25,93 +25,106 @@
       document.getElementById('gfy').style.visibility = 'hidden';
       document.getElementById('head').onclick = wormhole;
     };
-  </script> -->
+  </script>
 </head>
 
 
 <body>
   <header>
     <div class="logo">
-       <img src="src/home/logo.svg" width="60">
+       <img src="src/home/logo.svg">
        <p><b>YAYA</b> | YA-TING WANG<div id="mandarin"> 汪亞婷</div></p>
     </div>
 
-  </header>
+    <div class="banner">
+      <h1>Digital Product Designer, Biker, Coder, Industrial Designer</h1>
+      <p>Currently at <a href="http://www.condenast.com" taget="_blank">Condé Nast</a> designing a digital content platform for editors across 11 brands.</p>
+    </div>
 
-  <div class="banner">
-      <!--
-      <div id="gfy">
-        <img src="http://i.imgur.com/DYPND4X.gif" height="180px">
-        <div class="wormhole">
-          <a href="goodForYou.html"><h1>ENTER THE WORMHOLE</h1></a>
-        </div>
-      </div> -->
-      <!-- <h2><b>YAYA</b> | YA-TING WANG <div id="mandarin">汪亞婷</div></h2> -->
-    <h1>Digital Product Designer, Biker, Coder, Industrial Designer</h1>
-    <p>Currently at <a href="http://www.condenast.com" taget="_blank">Condé Nast</a>. Born & fed in <a href="http://travel.cnn.com/explorations/eat/40-taiwanese-food-296093/" target="_blank">Taiwan</a>.</p>
     <nav class="main-nav">
       <ul>
         <li><a href="#work">PROJECTS</a></li>
         <li><a href="#resume">ABOUT</a></li>
       </ul>
     </nav>
-  </div>
-
-  <!-- LIFE -->
-  <!-- <div class="even-spread">
-    <div class="life-title">
-      <h2>WHAT MAKES YAYA YAYA</h2>
-    </div>
-    <div class="life-box">
-    <img src="img/homepage-04.png">
-    <p>I grew up in a beautiful city in Taiwan, called Tainan. The city's optimistic vibe has a strong influence on my cheerful personality.</p>
-    </div>
-
-    <div class="life-box">
-    <img src="img/homepage-05.png">
-    <p>When I was in 9th grade, I flew to America to attend high school in New Jersey.</p>
-    </div>
-
-    <div class="life-box">
-    <img src="img/homepage-06.png">
-    <p>In 2012, I graduated from the Industrial and Interaction Design program at Syracuse University, and moved to New York City.</p>
-    </div>
-
-    <div class="life-box">
-    <img src="img/homepage-07.png">
-    <p>After working for a year, I decided to take the UXDi course at General Assembly to focus on User Experience design.</p>
-    </div>
-    <span class="stretch"></span>
-  </div> -->
+  </header>
 
   <!-- WORK -->
-  <div id="work" class="container">
-    <div class="work-box">
-      <a href="work_cnt.html"><img src="src/home/thumbnail-07.png"></a>
+  <table id="work">
+    <tr class="work-box">
+      <td>
+        <a href="work_cnt.html"><img src="src/home/thumbnail-07.png" width="400"></a>
+      </td>
+
+      <td>
+        <a href="work_fandango.html"><img src="src/home/thumbnail-01.png" width="400"></a>
+      </td>
+    </tr>
+
+    <tr class="work-box">
+      <td>
+        <a href="work_liquidTalent.html"><img src="src/home/thumbnail-02.png" width="400"></a>
+      </td>
+
+      <td>
+        <a href="work_myBikeLane.html"><img src="src/home/thumbnail-06.png" width="400"></a>
+      </td>
+    </tr>
+  </table>
+
+  <!-- ABOUT -->
+  <footer id="about">
+    <div id="head">
+      <img src="src/home/me.jpg">
     </div>
 
-    <div class="work-box">
-      <a href="work_fandango.html"><img src="src/home/thumbnail-01.png"></a>
+    <div id="gfy">
+      <img src="http://i.imgur.com/DYPND4X.gif" height="180px">
+      <div class="wormhole">
+        <a href="gfy.html">ENTER THE WORMHOLE</a>
+      </div>
     </div>
 
-    <div class="work-box">
-      <a href="work_liquidTalent.html"><img src="src/home/thumbnail-02.png"></a>
+    <!-- LIFE -->
+    <div class="even-spread">
+      <div class="life-title">
+        <h2>WHAT MAKES YAYA YAYA</h2>
+      </div>
+      <div class="life-box">
+      <img src="src/home/homepage-04.png">
+      <p>I grew up in a beautiful city in Taiwan, called Tainan. The city's optimistic vibe has a strong influence on my cheerful personality.</p>
+      </div>
+
+      <div class="life-box">
+      <img src="src/home/homepage-05.png">
+      <p>When I was in 9th grade, I flew to America to attend high school in New Jersey.</p>
+      </div>
+
+      <div class="life-box">
+      <img src="src/home/homepage-06.png">
+      <p>In 2012, I graduated from the Industrial and Interaction Design program at Syracuse University, and moved to New York City.</p>
+      </div>
+
+      <div class="life-box">
+      <img src="src/home/homepage-07.png">
+      <p>After working for a year, I decided to take the UXDi course at General Assembly to focus on User Experience design.</p>
+      </div>
+      <span class="stretch"></span>
     </div>
 
-    <div class="work-box">
-      <a href="work_myBikeLane.html"><img src="src/home/thumbnail-06.png"></a>
+    <div class="resume">
+      <a href="resume/Resume_YaTingWang.pdf" target="_blank">DOWNLOAD <br>PDF R&Eacute;SUM&Eacute;</a>
     </div>
-  </div>
 
+  </footer>
 
   <!-- RESUME -->
-  <div id="resume" class="container">
+  <!-- <div id="resume" class="container">
     <div class="life-title">
       <h2>HOW I BECAME <br>A SKILLFUL DESIGNER</h2>
     </div>
 
     <div class="exp-box">
-      <a href="http://www.condenast.com" target="_blank"><img src="src/home/homepage-14.png"></a>
 
       <div class="exp-box-content">
         <h2>Product Designer</h2>
@@ -126,7 +139,6 @@
     </div>
 
     <div class="exp-box">
-      <a href="http://www.condenast.com" target="_blank"><img src="src/home/cn_logo.png"></a>
 
       <div class="exp-box-content">
         <h2>User Experience Designer</h2>
@@ -140,7 +152,6 @@
     </div>
 
     <div class="exp-box">
-      <a href="http://www.generalassemb.ly" target="_blank"><img src="src/home/homepage-12.png"></a>
 
       <div class="exp-box-content">
         <h2>User Experience Design Practitioner</h2>
@@ -148,12 +159,10 @@
           <ul>
             <li>Attended the UXDi course and produced 4 design projects from research, competitive analysis, surveys, interviews, testing, prototyping, to final UI visualization; of which 2 are group projects and one with a real client, and I was the project manager of a team of 3.</li>
           </ul>
-          <!--<p>User Research</p> <p>User Interface Design</p> <p>Market Analysis</p> <p>OmniGraffle</p> <p>Axure</p> <p>InVision</p> <p>Flinto</p> <p>Illustrator</p> <p>InDesign</p> <p>Project Coordination</p> -->
       </div>
     </div>
 
     <div class="exp-box">
-      <a href="http://www.sladearch.com" target="_blank"><img src="src/home/homepage-08.png"></a>
 
       <div class="exp-box-content">
         <h2>GRAPHIC DESIGNER & MARKETING COORDINATOR</h2>
@@ -164,12 +173,10 @@
             <li>Assisted architectural renderings and presentations</li>
             <li>Coordinated with other consultants and submitted RFPs, RFQs</li> <li>Contacted the press with projects updates</li> <li>Managed the company website with regular updates</li><li>As well as planned an amazing office party with the Architecture League</li>
           </ul>
-          <!--<p>Photoshop</p> <p>Illustrator</p> <p>InDesign</p> <p>Rhino</p> <p>AutoCad</p> <p>ftp</p> <p>Email / Phone Communication</p> -->
       </div>
     </div>
 
     <div class="exp-box">
-      <a href="http://www.afoam.net" target="_blank"><img src="src/home/homepage-09.png"></a>
 
       <div class="exp-box-content">
         <h2>TEAM MEMBER</h2>
@@ -179,12 +186,10 @@
           <li>Designed the team's website</li>
           <li>Directed the online presence of the team as well as social media and press outreach</li>
         </ul>
-        <!--<p>Photoshop</p> <p>Illustrator</p> <p>sketching</p> <p>Fabrication/Power Tools</p> <p>Social Media</p> <p>Email / Phone Communication</p> -->
       </div>
     </div>
 
     <div class="exp-box">
-      <a href="http://www.coffeednyc.com" target="_blank"><img src="src/home/homepage-10.png"></a>
 
       <div class="exp-box-content">
         <h2>FREELANCE WEB DESIGNER</h2>
@@ -194,12 +199,10 @@
           <li>Proposed and created an illustration to demonstrate the shop's close eco-system with the rooftop farm, Brooklyn Grange</li>
           <li>Assisted presentation layout and design for city proposal which later was awarded and implemented</li>
         </ul>
-        <!-- <p>Illustrator</p> <p>InDesign</p> <p>Shopify</p> -->
       </div>
     </div>
 
     <div class="exp-box">
-      <a href="http://www.depositagift.com" target="_blank"><img src="src/home/homepage-11.png"></a>
 
       <div class="exp-box-content">
         <h2>WEB DESIGN INTERN</h2>
@@ -211,16 +214,10 @@
           <li>Worked closely with a developer and assisted website testing</li>
           <li>Designed collateral for prints and online media</li>
         </ul>
-        <!-- <p>Photoshop</p> <p>Illustrator</p> <p>ftp</p> <p>Php</p> -->
       </div>
-    </div>
+    </div> -->
 
-    <div class="resume">
-      <a href="resume/Resume_YaTingWang.pdf" target="_blank">DOWNLOAD <br>PDF R&Eacute;SUM&Eacute;</a>
-    </div>
-  </div>
-
-  <footer>
+  <!-- <footer>
     <div class="footer-box">
       <div class="email">
         <a href="MAILTO:yayawang18@gmail.com?subject=HELLO YAYA!">HIRE ME!<br>or JUST SAY HI</a>
@@ -238,7 +235,6 @@
 
       <div class ="copyright"><p><br>&copy; YA-TING WANG 2016<br><br>I designed and coded this website. <br>If you need help with your website, feel free to contact me!</p></div>
     </div>
-  </footer>
+  </footer> -->
 
-<script src="build/bundle.js"></script>
 </body>
