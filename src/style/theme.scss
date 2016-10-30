@@ -84,8 +84,25 @@ a:focus {
   border: 1px dashed $color-primary;
 }
 
+button {
+  background-color: $color-primary;
+  padding: 10px 20px;
+  border: none;
+
+  a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 1.25em;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 section {
-  padding: 40px 0;
+  padding-top: 40px;
 }
 
 span {
@@ -142,7 +159,7 @@ header {
 }
 
 #projects {
-  padding: 40px 0;
+  margin-bottom: 80px;
 
   .row {
     padding-bottom: 40px;
@@ -187,18 +204,22 @@ header {
 }
 
 #about {
-  background-color: $color-accent;
-  width: 100%;
-  height: 400px;
 
-  img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+  .resume {
+    background-color: $color-accent;
+    height: 800px;
+
   }
 
   #head {
+    padding-left: 40px;
     float: left;
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
   }
 
   #gfy {
@@ -220,69 +241,7 @@ header {
       }
     }
   }
-
 }
-
-.exp-box {
-  padding: 40px 0;
-  margin: 0 auto;
-  overflow: hidden;
-
-  img {
-    width: 180px;
-    float: left;
-  }
-
-  h2{
-    font-size: 1.1em;
-    margin: 0;
-    line-height: 1em;
-  }
-
-  h3{
-    color: $color-dark;
-    font-size: 1em;
-    margin: 0;
-    line-height: 2em;
-  }
-
-  ul {
-    padding-left: 16px;
-  }
-
-  li{
-    margin: 0;
-    font-size: 1em;
-    font-family: "Karla", sans-serif;
-    font-weight: 300;
-    text-align: left;
-  }
-
-  p{
-    display: none;
-  }
-}
-
-.exp-box-content {
-  width: 73%;
-  float: right;
-  text-align: left;
-}
-
-
-.resume {
-  margin: 20px auto;
-  width: 180px;
-  padding: 10px 16px;
-  background: rgba(255, 97, 77, 1);
-  text-align: center;
-  color: white;
-
-  &:hover {
-    opacity: .7;
-  }
-}
-
 
 // /*---- FOOTER ----*/
 // footer {

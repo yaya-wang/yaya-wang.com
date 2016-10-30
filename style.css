@@ -60,8 +60,20 @@ a:focus {
   background: #ffe9e6;
   border: 1px dashed #ff614d; }
 
+button {
+  background-color: #ff614d;
+  padding: 10px 20px;
+  border: none; }
+  button a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 1.25em; }
+    button a:hover {
+      text-decoration: underline; }
+
 section {
-  padding: 40px 0; }
+  padding-top: 40px; }
 
 span {
   display: inline-flex; }
@@ -93,7 +105,7 @@ header {
       font-size: 1.15em; }
 
 #projects {
-  padding: 40px 0; }
+  margin-bottom: 80px; }
   #projects .row {
     padding-bottom: 40px; }
     #projects .row .work-image {
@@ -119,70 +131,28 @@ header {
         #projects .row .work-text .mistake ul {
           padding-top: 20px; }
 
-#about {
+#about .resume {
   background-color: #ffe9e6;
-  width: 100%;
-  height: 400px; }
-  #about img {
+  height: 800px; }
+#about #head {
+  padding-left: 40px;
+  float: left; }
+  #about #head img {
     width: 200px;
     height: 200px;
     border-radius: 50%; }
-  #about #head {
-    float: left; }
-  #about #gfy {
-    position: absolute; }
-    #about #gfy .wormhole {
-      position: absolute;
-      top: 70px;
-      text-align: center; }
-      #about #gfy .wormhole a {
-        font-size: 1.5em;
-        color: yellow;
-        text-decoration: underline; }
-        #about #gfy .wormhole a:hover {
-          color: white; }
-
-.exp-box {
-  padding: 40px 0;
-  margin: 0 auto;
-  overflow: hidden; }
-  .exp-box img {
-    width: 180px;
-    float: left; }
-  .exp-box h2 {
-    font-size: 1.1em;
-    margin: 0;
-    line-height: 1em; }
-  .exp-box h3 {
-    color: #1a1a1a;
-    font-size: 1em;
-    margin: 0;
-    line-height: 2em; }
-  .exp-box ul {
-    padding-left: 16px; }
-  .exp-box li {
-    margin: 0;
-    font-size: 1em;
-    font-family: "Karla", sans-serif;
-    font-weight: 300;
-    text-align: left; }
-  .exp-box p {
-    display: none; }
-
-.exp-box-content {
-  width: 73%;
-  float: right;
-  text-align: left; }
-
-.resume {
-  margin: 20px auto;
-  width: 180px;
-  padding: 10px 16px;
-  background: #ff614d;
-  text-align: center;
-  color: white; }
-  .resume:hover {
-    opacity: .7; }
+#about #gfy {
+  position: absolute; }
+  #about #gfy .wormhole {
+    position: absolute;
+    top: 70px;
+    text-align: center; }
+    #about #gfy .wormhole a {
+      font-size: 1.5em;
+      color: yellow;
+      text-decoration: underline; }
+      #about #gfy .wormhole a:hover {
+        color: white; }
 
 /*---- WORK ----*/
 /*Slideshow*/
