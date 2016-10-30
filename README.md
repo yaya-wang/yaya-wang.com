@@ -1,7 +1,5 @@
-# yaya-wang.com
-find the easter egg on my page, and you will get a cringy reward.
+# A Retrospective of Yaya's Digital Life
+Find the easter egg on my site, and you will see the dark matter inside Yaya's brain.
 
--
-
-Watch scss
-```sass --watch theme.scss:../../style.css```
+#### How to Watch Scss
+```$sass --watch theme.scss:../../style.css```
