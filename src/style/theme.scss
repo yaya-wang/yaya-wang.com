@@ -3,7 +3,7 @@ $color-primary: #ff614d;
 $color-accent: #ffe9e6;
 $color-dark: #1a1a1a;
 $color-medium: #666666;
-$color-light: #808080;
+$color-light: #999999;
 
 .link-primary {
   color: $color-primary;
@@ -150,7 +150,6 @@ header {
     .work-image {
       width: 80%;
       padding: 60px 100px 0 40px;
-      border-bottom: 1px dotted $color-light;
       background-color: $color-accent;
 
       img {

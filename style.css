@@ -16,10 +16,10 @@
   text-transform: uppercase;
   text-decoration: none;
   padding-bottom: 3px;
-  border-bottom: 2px solid #808080; }
+  border-bottom: 2px solid #999999; }
   .link-secondary a:hover, header .main-nav a:hover, #projects .row .work-text .mistake a:hover {
     transition: border .1s;
-    border-bottom: 4px solid #808080; }
+    border-bottom: 4px solid #999999; }
 
 html {
   border: 10px solid #ffe9e6; }
@@ -99,7 +99,6 @@ header {
     #projects .row .work-image {
       width: 80%;
       padding: 60px 100px 0 40px;
-      border-bottom: 1px dotted #808080;
       background-color: #ffe9e6; }
       #projects .row .work-image img {
         width: 100%; }
