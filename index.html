@@ -1,252 +1,258 @@
 <!DOCTYPE html>
-<head>
-  <!-- °˖✧◝(⁰▿⁰)◜✧˖° Hi hi! This is Yaya. -->
-  <!-- Now that you are here, I have a hint for you: there's an easter egg on this site! -->
-  <title>YAYA | UX Product Designer</title>
+<html>
+  <head>
+    <!-- °˖✧◝(⁰▿⁰)◜✧˖° Hi hi! This is Yaya. -->
+    <!-- Now that you are here, I have a hint for you: there's an easter egg on this site! -->
+    <title>YAYA | UX Product Designer</title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Yaya is a Product Designer aiming to create happy experiences.">
-  <meta name="keywords" content="UX, UI, Design, User Experience Designer, User Inferface Designer, User Interaction Designer, Product Designer, Portfolio, Application, Web">
-  <meta name="author" content="Ya-Ting Wang">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yaya is a Product Designer aiming to create happy experiences.">
+    <meta name="keywords" content="UX, UI, Design, User Experience Designer, User Inferface Designer, User Interaction Designer, Product Designer, Portfolio, Application, Web">
+    <meta name="author" content="Ya-Ting Wang">
 
-  <link rel="icon" type="image/ico" href="src/_main/favicon.ico">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Karla|Lora" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="src/_main/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Lora" rel="stylesheet">
 
-  <script>
-    function wormhole(){
-      document.getElementById('gfy').style.visibility = 'visible';
-    }
+    <script>
+      function wormhole(){
+        document.getElementById('gfy').style.visibility = 'visible';
+      }
 
-    window.onload = function() {
-      var head = document.getElementById('head');
-      document.getElementById('gfy').style.visibility = 'hidden';
-      document.getElementById('head').onclick = wormhole;
-    };
-  </script>
-</head>
+      window.onload = function() {
+        var head = document.getElementById('head');
+        document.getElementById('gfy').style.visibility = 'hidden';
+        document.getElementById('head').onclick = wormhole;
+      };
+    </script>
+  </head>
 
 
-<body>
-  <header>
-    <div class="logo">
-       <img src="src/_main/logo.svg">
-       <p><b>YAYA</b> | YA-TING WANG<div id="mandarin"> 汪亞婷</div></p>
-    </div>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+         <img src="src/_main/logo.svg">
+         <p><b>YAYA</b> | YA-TING WANG<div id="mandarin"> 汪亞婷</div></p>
+      </a>
+    </header>
 
     <div class="banner">
-      <h1>Digital Product Designer, Biker, Coder, Industrial Designer</h1>
-      <p>at <a href="http://www.condenast.com" target="_blank">Condé Nast</a> designing a digital content platform for editors across 11 brands.</p>
+      <div class="headline">
+        <h1>Digital Product Designer, Biker, Coder, Industrial Designer</h1>
+        <p>at <a href="http://www.condenast.com" target="_blank">Condé Nast</a> designing a digital content platform for editors across 11 brands.</p>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About Yaya</a></li>
+        </ul>
+      </nav>
     </div>
 
-    <nav class="main-nav">
-      <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About Yaya</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- WORK -->
+    <section id="projects">
+      <h6>Projects</h6>
+      <span class="row">
+        <a class="work-image" href="work_ad.html">
+          <img src="src/_main/thumb-ad.png">
+        </a>
+        <div class="work-text">
+          <div class="mistake">
+            <h1>Architectural Digest</h1>
+            <p>A responsive website redesign that empowers editorial story telling and provide readers impactful inspirations.</p>
+            <ul>
+              <li><a href="work_ad.html">Case Study</a></li>
+              <li><a href="http://www.architecturaldigest.com/" target="_blank">View Live</a></li>
+            </ul>
+          </div>
+        </div>
+      </span>
 
-  <!-- WORK -->
-  <section id="projects">
-    <h6>Projects</h6>
-    <span class="row">
-      <a class="work-image" href="work_ad.html">
-        <img src="src/_main/thumb-ad.png">
-      </a>
-      <div class="work-text">
-        <div class="mistake">
-          <h1>Architectural Digest</h1>
-          <p>A responsive website redesign that empowers editorial story telling and provide readers impactful inspirations.</p>
-          <ul>
-            <li><a href="work_ad.html">Case Study</a></li>
-            <li><a href="http://www.architecturaldigest.com/" target="_blank">View Live</a></li>
-          </ul>
+      <span class="row">
+        <a class="work-image" href="work_ad.html">
+          <img src="src/_main/thumb-ad.png">
+        </a>
+        <div class="work-text">
+          <div class="mistake">
+            <h1>Architectural Digest</h1>
+            <p>A responsive website redesign that empowers editorial story telling and provide readers impactful inspirations.</p>
+            <ul>
+              <li><a href="work_ad.html">Case Study</a></li>
+              <li><a href="http://www.architecturaldigest.com/" target="_blank">View Live</a></li>
+            </ul>
+          </div>
+        </div>
+      </span>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h6>About Yaya</h6>
+      <div class="resume">
+        <div id="head">
+          <img src="src/_main/me.jpg">
+        </div>
+
+        <div id="gfy">
+          <!-- <img src="http://i.imgur.com/DYPND4X.gif" height="180px"> -->
+          <div class="wormhole">
+            <a href="gfy.html">ENTER THE WORMHOLE</a>
+          </div>
+        </div>
+
+        <div class="download">
+          <a href="src/resume/Resume_YaTingWang.pdf" target="_blank">
+            Download PDF R&eacute;sum&eacute;
+          </a>
         </div>
       </div>
-    </span>
-
-    <span class="row">
-      <a class="work-image" href="work_ad.html">
-        <img src="src/_main/thumb-ad.png">
-      </a>
-      <div class="work-text">
-        <div class="mistake">
-          <h1>Architectural Digest</h1>
-          <p>A responsive website redesign that empowers editorial story telling and provide readers impactful inspirations.</p>
-          <ul>
-            <li><a href="work_ad.html">Case Study</a></li>
-            <li><a href="http://www.architecturaldigest.com/" target="_blank">View Live</a></li>
-          </ul>
+    </section>
+      <!-- LIFE -->
+      <!-- <div class="even-spread">
+        <div class="life-title">
         </div>
-      </div>
-    </span>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <h6>About Yaya</h6>
-    <div class="resume">
-      <div id="head">
-        <img src="src/_main/me.jpg">
-      </div>
-
-      <div id="gfy">
-        <!-- <img src="http://i.imgur.com/DYPND4X.gif" height="180px"> -->
-        <div class="wormhole">
-          <a href="gfy.html">ENTER THE WORMHOLE</a>
+        <div class="life-box">
+        <img src="src/_main/homepage-04.png">
+        <p>I grew up in a beautiful city in Taiwan, called Tainan. The city's optimistic vibe has a strong influence on my cheerful personality.</p>
         </div>
-      </div>
 
-      <button>
-        <a href="resume/Resume_YaTingWang.pdf" target="_blank">Download PDF R&eacute;sum&eacute;</a>
-      </button>
-    </div>
-  </section>
-    <!-- LIFE -->
-    <!-- <div class="even-spread">
+        <div class="life-box">
+        <img src="src/_main/homepage-05.png">
+        <p>When I was in 9th grade, I flew to America to attend high school in New Jersey.</p>
+        </div>
+
+        <div class="life-box">
+        <img src="src/_main/homepage-06.png">
+        <p>In 2012, I graduated from the Industrial and Interaction Design program at Syracuse University, and moved to New York City.</p>
+        </div>
+
+        <div class="life-box">
+        <img src="src/_main/homepage-07.png">
+        <p>After working for a year, I decided to take the UXDi course at General Assembly to focus on User Experience design.</p>
+        </div>
+        <span class="stretch"></span>
+      </div> -->
+
+    <!-- RESUME -->
+    <!-- <div id="resume" class="container">
       <div class="life-title">
-      </div>
-      <div class="life-box">
-      <img src="src/_main/homepage-04.png">
-      <p>I grew up in a beautiful city in Taiwan, called Tainan. The city's optimistic vibe has a strong influence on my cheerful personality.</p>
+        <h2>HOW I BECAME <br>A SKILLFUL DESIGNER</h2>
       </div>
 
-      <div class="life-box">
-      <img src="src/_main/homepage-05.png">
-      <p>When I was in 9th grade, I flew to America to attend high school in New Jersey.</p>
+      <div class="exp-box">
+
+        <div class="exp-box-content">
+          <h2>Product Designer</h2>
+          <h3>Jan 2016 - Current | New York, NY</h3>
+            <ul>
+              <li>Worked closely with a product manager and 4 developers in agile development</li>
+              <li>Conducted user interviews to help refine product direction</li>
+              <li>Created multiple rapid prototypes for user testings</li>
+              <li>Gathered user feedback for iterations</li>
+            </ul>
+        </div>
       </div>
 
-      <div class="life-box">
-      <img src="src/_main/homepage-06.png">
-      <p>In 2012, I graduated from the Industrial and Interaction Design program at Syracuse University, and moved to New York City.</p>
+      <div class="exp-box">
+
+        <div class="exp-box-content">
+          <h2>User Experience Designer</h2>
+          <h3>Sep 2014 - Dec 2015 | New York, NY</h3>
+            <ul>
+              <li>Created personas, wireframes, and visual design across multiple brands including New Yorker, Condé Nast Traveler, Architectural Digest, W, and Brides</li>
+              <li>Involved in QA development for Teen Vogue and Golf Digest</li>
+              <li>Built HTML/CSS prototypes for initial concepting</li>
+            </ul>
+        </div>
       </div>
 
-      <div class="life-box">
-      <img src="src/_main/homepage-07.png">
-      <p>After working for a year, I decided to take the UXDi course at General Assembly to focus on User Experience design.</p>
+      <div class="exp-box">
+
+        <div class="exp-box-content">
+          <h2>User Experience Design Practitioner</h2>
+          <h3>Jun 2014 - Aug 2014 | New York, NY</h3>
+            <ul>
+              <li>Attended the UXDi course and produced 4 design projects from research, competitive analysis, surveys, interviews, testing, prototyping, to final UI visualization; of which 2 are group projects and one with a real client, and I was the project manager of a team of 3.</li>
+            </ul>
+        </div>
       </div>
-      <span class="stretch"></span>
-    </div> -->
 
-  <!-- RESUME -->
-  <!-- <div id="resume" class="container">
-    <div class="life-title">
-      <h2>HOW I BECAME <br>A SKILLFUL DESIGNER</h2>
-    </div>
+      <div class="exp-box">
 
-    <div class="exp-box">
+        <div class="exp-box-content">
+          <h2>GRAPHIC DESIGNER & MARKETING COORDINATOR</h2>
+          <h3>Feb 2013 - May 2014 | New York, NY</h3>
+            <ul>
+              <li>Created environmental graphics and products</li>
+              <li>Managed an entire installation through design, fabrication, to post-event marketing</li>
+              <li>Assisted architectural renderings and presentations</li>
+              <li>Coordinated with other consultants and submitted RFPs, RFQs</li> <li>Contacted the press with projects updates</li> <li>Managed the company website with regular updates</li><li>As well as planned an amazing office party with the Architecture League</li>
+            </ul>
+        </div>
+      </div>
 
-      <div class="exp-box-content">
-        <h2>Product Designer</h2>
-        <h3>Jan 2016 - Current | New York, NY</h3>
+      <div class="exp-box">
+
+        <div class="exp-box-content">
+          <h2>TEAM MEMBER</h2>
+          <h3>Mar 2013 - Ongoing | New York, NY</h3>
           <ul>
-            <li>Worked closely with a product manager and 4 developers in agile development</li>
-            <li>Conducted user interviews to help refine product direction</li>
-            <li>Created multiple rapid prototypes for user testings</li>
-            <li>Gathered user feedback for iterations</li>
+            <li>Collaborated with an international team of 11 designers and friends to submit design competitions</li>
+            <li>Designed the team's website</li>
+            <li>Directed the online presence of the team as well as social media and press outreach</li>
           </ul>
+        </div>
       </div>
-    </div>
 
-    <div class="exp-box">
+      <div class="exp-box">
 
-      <div class="exp-box-content">
-        <h2>User Experience Designer</h2>
-        <h3>Sep 2014 - Dec 2015 | New York, NY</h3>
+        <div class="exp-box-content">
+          <h2>FREELANCE WEB DESIGNER</h2>
+          <h3>Dec 2012 - Feb 2013 | New York, NY</h3>
           <ul>
-            <li>Created personas, wireframes, and visual design across multiple brands including New Yorker, Condé Nast Traveler, Architectural Digest, W, and Brides</li>
-            <li>Involved in QA development for Teen Vogue and Golf Digest</li>
-            <li>Built HTML/CSS prototypes for initial concepting</li>
+            <li>Designed & set up e-commerce website with a developer</li>
+            <li>Proposed and created an illustration to demonstrate the shop's close eco-system with the rooftop farm, Brooklyn Grange</li>
+            <li>Assisted presentation layout and design for city proposal which later was awarded and implemented</li>
           </ul>
+        </div>
       </div>
-    </div>
 
-    <div class="exp-box">
+      <div class="exp-box">
 
-      <div class="exp-box-content">
-        <h2>User Experience Design Practitioner</h2>
-        <h3>Jun 2014 - Aug 2014 | New York, NY</h3>
+        <div class="exp-box-content">
+          <h2>WEB DESIGN INTERN</h2>
+          <h3>Aug 2012 - Jan 2013 | New York, NY</h3>
           <ul>
-            <li>Attended the UXDi course and produced 4 design projects from research, competitive analysis, surveys, interviews, testing, prototyping, to final UI visualization; of which 2 are group projects and one with a real client, and I was the project manager of a team of 3.</li>
+            <li>Generated over 70 theme templates for premium users</li>
+            <li>Assisted in designing new homepage</li>
+            <li>Created icons which later were used throughout the sites and collateral</li>
+            <li>Worked closely with a developer and assisted website testing</li>
+            <li>Designed collateral for prints and online media</li>
           </ul>
-      </div>
-    </div>
+        </div>
+      </div> -->
 
-    <div class="exp-box">
+    <!-- <footer>
+      <div class="footer-box">
+        <div class="email">
+          <a href="MAILTO:yayawang18@gmail.com?subject=HELLO YAYA!">HIRE ME!<br>or JUST SAY HI</a>
+        </div>
 
-      <div class="exp-box-content">
-        <h2>GRAPHIC DESIGNER & MARKETING COORDINATOR</h2>
-        <h3>Feb 2013 - May 2014 | New York, NY</h3>
+        <div class="contact">
+          <p>yayawang18@gmail.com</p>
+          <p>617.806.6618</p>
           <ul>
-            <li>Created environmental graphics and products</li>
-            <li>Managed an entire installation through design, fabrication, to post-event marketing</li>
-            <li>Assisted architectural renderings and presentations</li>
-            <li>Coordinated with other consultants and submitted RFPs, RFQs</li> <li>Contacted the press with projects updates</li> <li>Managed the company website with regular updates</li><li>As well as planned an amazing office party with the Architecture League</li>
+            <li><a href="http://www.linkedin.com/in/yayawang/"><img src="src/footer/w_linkedin.png" height="20px"></a></li>
+            <li><a href="http://twitter.com/yaya_won"><img src="src/footer/w_twitter.png" height="18px"></a></li>
+            <li><a href="http://yaya-ux.tumblr.com/"><img src="src/footer/w_tumblr.png" height="20px"></a></li>
           </ul>
+        </div>
+
+        <div class ="copyright"><p><br>&copy; YA-TING WANG 2016<br><br>I designed and coded this website. <br>If you need help with your website, feel free to contact me!</p></div>
       </div>
-    </div>
+    </footer> -->
 
-    <div class="exp-box">
-
-      <div class="exp-box-content">
-        <h2>TEAM MEMBER</h2>
-        <h3>Mar 2013 - Ongoing | New York, NY</h3>
-        <ul>
-          <li>Collaborated with an international team of 11 designers and friends to submit design competitions</li>
-          <li>Designed the team's website</li>
-          <li>Directed the online presence of the team as well as social media and press outreach</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="exp-box">
-
-      <div class="exp-box-content">
-        <h2>FREELANCE WEB DESIGNER</h2>
-        <h3>Dec 2012 - Feb 2013 | New York, NY</h3>
-        <ul>
-          <li>Designed & set up e-commerce website with a developer</li>
-          <li>Proposed and created an illustration to demonstrate the shop's close eco-system with the rooftop farm, Brooklyn Grange</li>
-          <li>Assisted presentation layout and design for city proposal which later was awarded and implemented</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="exp-box">
-
-      <div class="exp-box-content">
-        <h2>WEB DESIGN INTERN</h2>
-        <h3>Aug 2012 - Jan 2013 | New York, NY</h3>
-        <ul>
-          <li>Generated over 70 theme templates for premium users</li>
-          <li>Assisted in designing new homepage</li>
-          <li>Created icons which later were used throughout the sites and collateral</li>
-          <li>Worked closely with a developer and assisted website testing</li>
-          <li>Designed collateral for prints and online media</li>
-        </ul>
-      </div>
-    </div> -->
-
-  <!-- <footer>
-    <div class="footer-box">
-      <div class="email">
-        <a href="MAILTO:yayawang18@gmail.com?subject=HELLO YAYA!">HIRE ME!<br>or JUST SAY HI</a>
-      </div>
-
-      <div class="contact">
-        <p>yayawang18@gmail.com</p>
-        <p>617.806.6618</p>
-        <ul>
-          <li><a href="http://www.linkedin.com/in/yayawang/"><img src="src/footer/w_linkedin.png" height="20px"></a></li>
-          <li><a href="http://twitter.com/yaya_won"><img src="src/footer/w_twitter.png" height="18px"></a></li>
-          <li><a href="http://yaya-ux.tumblr.com/"><img src="src/footer/w_tumblr.png" height="20px"></a></li>
-        </ul>
-      </div>
-
-      <div class ="copyright"><p><br>&copy; YA-TING WANG 2016<br><br>I designed and coded this website. <br>If you need help with your website, feel free to contact me!</p></div>
-    </div>
-  </footer> -->
-
-</body>
+  </body>
+</html>

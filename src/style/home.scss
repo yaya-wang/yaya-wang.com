@@ -1,0 +1,108 @@
+@import "theme";
+
+.banner {
+  margin: 40px 40px 120px;
+
+  .headline {
+    margin: 25vh 0;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.15em;
+    }
+
+    a {
+      @extend .link-primary;
+    }
+  }
+
+  .main-nav {
+    @extend .link-secondary;
+    margin-top: 40px;
+  }
+}
+
+#projects {
+  margin-bottom: 80px;
+
+  .row {
+    padding-bottom: 40px;
+
+    .work-image {
+      width: 80%;
+      padding: 60px 100px 0 40px;
+      background-color: $color-accent;
+      display: inherit;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .work-text {
+      width: 20%;
+      padding-right: 40px;
+
+      .mistake {
+        @extend .link-secondary;
+        @extend .shadow;
+        border-top: 5px solid $color-primary;
+        margin-top: 60px;
+        margin-left: -60px;
+        background-color: rgba(255,255,255,.8);
+        padding: 0 20px 20px;
+
+        p {
+          color: $color-medium;
+        }
+
+        ul {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+#about {
+  .resume {
+    background-color: $color-accent;
+    padding: 40px;
+    height: 800px; /*remove this later*/
+
+    .download {
+      @extend .link-secondary;
+    }
+  }
+
+  #head {
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+  }
+
+  #gfy {
+    position: absolute;
+
+    .wormhole {
+      position: absolute;
+      top: 70px;
+      text-align: center;
+
+      a {
+        font-size: 1.5em;
+        color: yellow;
+        text-decoration: underline;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
