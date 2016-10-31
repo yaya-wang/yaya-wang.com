@@ -35,10 +35,10 @@
       width: 80%;
       padding: 60px 100px 0 40px;
       background-color: $color-accent;
-      display: inherit;
 
       img {
         width: 100%;
+        display: inherit;
       }
     }
 
@@ -52,7 +52,7 @@
         border-top: 5px solid $color-primary;
         margin-top: 60px;
         margin-left: -60px;
-        background-color: rgba(255,255,255,.8);
+        background-color: rgba(255, 255, 255, .8);
         padding: 0 20px 20px;
 
         p {
@@ -60,7 +60,8 @@
         }
 
         ul {
-          padding-top: 20px;
+          margin-top: 20px;
+          line-height: 2em;
         }
       }
     }
@@ -68,41 +69,55 @@
 }
 
 #about {
-  .resume {
+  .intro {
     background-color: $color-accent;
     padding: 40px;
-    height: 800px; /*remove this later*/
+    display: flex;
 
-    .download {
-      @extend .link-secondary;
+    #head {
+      float: left;
+      display: inline-block;
+
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
     }
-  }
 
-  #head {
-    img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-    }
-  }
+    .objective {
+      float: right;
+      margin-left: 40px;
 
-  #gfy {
-    position: absolute;
+      p {
+        display: block;
+        line-height: 2em;
+      }
 
-    .wormhole {
-      position: absolute;
-      top: 70px;
-      text-align: center;
-
-      a {
-        font-size: 1.5em;
-        color: yellow;
-        text-decoration: underline;
-
-        &:hover {
-          color: white;
-        }
+      ul {
+        @extend .link-secondary;
+        padding: 0;
       }
     }
   }
 }
+
+
+// #gfy {
+//   position: absolute;
+//
+//   .wormhole {
+//     position: absolute;
+//     text-align: center;
+//
+//     a {
+//       font-size: 1.5em;
+//       color: yellow;
+//       text-decoration: underline;
+//
+//       &:hover {
+//         color: white;
+//       }
+//     }
+//   }
+// }

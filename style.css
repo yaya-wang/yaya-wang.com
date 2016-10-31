@@ -3,7 +3,7 @@
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); }
 
 html {
-  border: 10px solid #ffe9e6; }
+  border: 20px solid #ffe9e6; }
 
 body {
   margin: 0;
@@ -23,7 +23,7 @@ h1, h3 {
 
 h6 {
   color: #1a1a1a;
-  padding-left: 34px;
+  padding-left: 38px;
   margin-top: -40px;
   font-size: 4em;
   text-transform: uppercase;
@@ -46,19 +46,19 @@ a {
   color: #ff614d;
   text-decoration: none; }
 
-.link-secondary ul, .banner .main-nav ul, #projects .row .work-text .mistake ul, #about .resume .download ul {
+.link-secondary ul, .banner .main-nav ul, #projects .row .work-text .mistake ul, #about .intro .objective ul ul {
   padding: 0; }
-.link-secondary li, .banner .main-nav li, #projects .row .work-text .mistake li, #about .resume .download li {
+.link-secondary li, .banner .main-nav li, #projects .row .work-text .mistake li, #about .intro .objective ul li {
   padding-right: 20px;
   display: inline-block;
   height: 20px; }
-.link-secondary a, .banner .main-nav a, #projects .row .work-text .mistake a, #about .resume .download a {
+.link-secondary a, .banner .main-nav a, #projects .row .work-text .mistake a, #about .intro .objective ul a {
   color: #666666;
   text-transform: uppercase;
   text-decoration: none;
   padding-bottom: 3px;
   border-bottom: 2px solid #999999; }
-  .link-secondary a:hover, .banner .main-nav a:hover, #projects .row .work-text .mistake a:hover, #about .resume .download a:hover {
+  .link-secondary a:hover, .banner .main-nav a:hover, #projects .row .work-text .mistake a:hover, #about .intro .objective ul a:hover {
     transition: border .1s;
     border-bottom: 4px solid #999999; }
 
@@ -105,10 +105,10 @@ header {
     #projects .row .work-image {
       width: 80%;
       padding: 60px 100px 0 40px;
-      background-color: #ffe9e6;
-      display: inherit; }
+      background-color: #ffe9e6; }
       #projects .row .work-image img {
-        width: 100%; }
+        width: 100%;
+        display: inherit; }
     #projects .row .work-text {
       width: 20%;
       padding-right: 40px; }
@@ -121,36 +121,35 @@ header {
         #projects .row .work-text .mistake p {
           color: #666666; }
         #projects .row .work-text .mistake ul {
-          padding-top: 20px; }
+          margin-top: 20px;
+          line-height: 2em; }
 
-#about .resume {
+#about .intro {
   background-color: #ffe9e6;
   padding: 40px;
-  height: 800px;
-  /*remove this later*/ }
-#about #head img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%; }
-#about #gfy {
-  position: absolute; }
-  #about #gfy .wormhole {
-    position: absolute;
-    top: 70px;
-    text-align: center; }
-    #about #gfy .wormhole a {
-      font-size: 1.5em;
-      color: yellow;
-      text-decoration: underline; }
-      #about #gfy .wormhole a:hover {
-        color: white; }
+  display: flex; }
+  #about .intro #head {
+    float: left;
+    display: inline-block; }
+    #about .intro #head img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%; }
+  #about .intro .objective {
+    float: right;
+    margin-left: 40px; }
+    #about .intro .objective p {
+      display: block;
+      line-height: 2em; }
+    #about .intro .objective ul {
+      padding: 0; }
 
 /* Global Stylesheet*/
 .shadow, #projects .row .work-text .mistake, .overview h6 {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); }
 
 html {
-  border: 10px solid #ffe9e6; }
+  border: 20px solid #ffe9e6; }
 
 body {
   margin: 0;
@@ -170,7 +169,7 @@ h1, h3 {
 
 h6 {
   color: #1a1a1a;
-  padding-left: 34px;
+  padding-left: 38px;
   margin-top: -40px;
   font-size: 4em;
   text-transform: uppercase;
@@ -193,19 +192,19 @@ a {
   color: #ff614d;
   text-decoration: none; }
 
-.link-secondary ul, .banner .main-nav ul, #projects .row .work-text .mistake ul, #about .resume .download ul {
+.link-secondary ul, .banner .main-nav ul, #projects .row .work-text .mistake ul, #about .intro .objective ul ul {
   padding: 0; }
-.link-secondary li, .banner .main-nav li, #projects .row .work-text .mistake li, #about .resume .download li {
+.link-secondary li, .banner .main-nav li, #projects .row .work-text .mistake li, #about .intro .objective ul li {
   padding-right: 20px;
   display: inline-block;
   height: 20px; }
-.link-secondary a, .banner .main-nav a, #projects .row .work-text .mistake a, #about .resume .download a {
+.link-secondary a, .banner .main-nav a, #projects .row .work-text .mistake a, #about .intro .objective ul a {
   color: #666666;
   text-transform: uppercase;
   text-decoration: none;
   padding-bottom: 3px;
   border-bottom: 2px solid #999999; }
-  .link-secondary a:hover, .banner .main-nav a:hover, #projects .row .work-text .mistake a:hover, #about .resume .download a:hover {
+  .link-secondary a:hover, .banner .main-nav a:hover, #projects .row .work-text .mistake a:hover, #about .intro .objective ul a:hover {
     transition: border .1s;
     border-bottom: 4px solid #999999; }
 
