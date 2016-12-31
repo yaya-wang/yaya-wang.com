@@ -1,59 +1,131 @@
 @import "theme";
 
-.banner {
-  margin: 40px 40px 120px;
+.header {
+  padding: 20px;
 
-  .headline {
-    margin: 25vh 0;
+  @media screen and (min-width: 1280px){
+    padding: 40px;
+  }
 
-    h1 {
-      font-size: 2em;
+  .logo {
+    img {
+      width: 30px;
+      filter: invert(40%);
+      padding-right: 5px;
     }
 
     p {
-      font-size: 1.15em;
+      color: $color-medium;
+      display: inline-block;
+      font-size: .875em;
     }
 
-    a {
-      @extend .link-primary;
+    #mandarin {
+      display: inline;
+      font-size: .75em;
+    }
+
+    @media screen and (min-width: 1280px){
+      img {
+        padding-right: 10px;
+        float: left;
+        width: 50px;
+        filter: drop-shadow($emboss);
+      }
+
+      p {
+        font-size: 1.5em;
+        color: $white;
+        text-shadow: $emboss;
+        padding-top: 8px;
+      }
+
+      #mandarin {
+        color: $white;
+        text-shadow: $emboss;
+        padding-left: 10px;
+        font-size: 1.125em;
+      }
     }
   }
 
-  .main-nav {
-    @extend .link-secondary;
-    margin-top: 40px;
+  .banner {
+    margin: 20px 0;
+
+    @media screen and (min-width: 1280px){
+      margin: 40px 0 100px;
+    }
+
+    .headline {
+      margin: 40px 0;
+
+      @media screen and (min-width: 1280px){
+        margin: 20vh 0;
+      }
+
+      h1 {
+        font-size: 1.25em;
+        line-height: 1.75em;
+
+        @media screen and (min-width: 1280px){
+          font-size: 2em;
+        }
+      }
+
+      p {
+        font-size: 1em;
+        line-height: 1.75em;
+
+        @media screen and (min-width: 1280px){
+          font-size: 1.15em;
+        }
+      }
+
+      a {
+        @extend .link-primary;
+      }
+    }
+
+    .main-nav {
+      @extend .link-secondary;
+      margin-top: 40px;
+    }
   }
 }
 
 #projects {
-  margin-bottom: 80px;
+  margin: 40px 0 80px;
 
   .row {
-    padding-bottom: 40px;
+    display: inline-block;
 
-    .work-image {
-      width: 80%;
-      padding: 60px 100px 0 40px;
-      background-color: $color-accent;
-
-      img {
-        width: 100%;
-        display: inherit;
-      }
+    @media screen and (min-width: 1280px){
+      display: flex;
+      padding-bottom: 40px;
     }
 
     .work-text {
-      width: 20%;
-      padding-right: 40px;
+      padding-bottom: 10px;
+
+      @media screen and (min-width: 1280px){
+        width: 20%;
+        padding-right: 40px;
+      }
 
       .mistake {
         @extend .link-secondary;
-        @extend .shadow;
+        @extend .shadow-lg;
         border-top: 5px solid $color-primary;
-        margin-top: 60px;
-        margin-left: -60px;
         background-color: rgba(255, 255, 255, .8);
         padding: 0 20px 20px;
+
+        @media screen and (min-width: 1280px){
+          border-left: 2px solid rgba($color-light, .1);
+          margin-top: 60px;
+          left: 80px;
+          position: absolute;
+          width: 17%;
+        }
 
         p {
           color: $color-medium;
@@ -63,6 +135,26 @@
           margin-top: 20px;
           line-height: 2em;
         }
+      }
+    }
+
+    .work-image {
+      display: inline-block;
+      padding: 20px 0;
+      // border-top: 5px solid $color-primary;
+
+      @media screen and (min-width: 1280px){
+        @include shadow-inner;
+        border: none;
+        background-color: $color-accent;
+        width: 80%;
+        margin-right: 40px;
+        padding: 60px 40px 0 100px;
+      }
+
+      img {
+        width: 100%;
+        display: inherit;
       }
     }
   }
