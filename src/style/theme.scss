@@ -5,22 +5,22 @@ $color-dark: #1a1a1a;
 $color-medium: #666666;
 $color-light: #999999;
 $white: #fff;
-$emboss: 2px 1px 1px rgba(0,0,0,.2);
 
 .shadow {
-  box-shadow: 2px 2px 4px rgba(0,0,0,.1);
+  box-shadow: 6px 6px 2px rgba(0, 0, 0, .1);
 }
 
-.shadow-lg {
-  box-shadow: 6px 6px 8px rgba(0,0,0,.1);
+@mixin shadow-lg {
+  box-shadow: 8px 8px 6px rgba(0, 0, 0, .1);
 }
 
 @mixin shadow-inner {
-  box-shadow: inset -2px 2px 4px rgba(0,0,0,.1);
+  box-shadow: inset -4px 4px 2px rgba(0, 0, 0, .1);
 }
 
-@mixin shadow-inner-lg {
-  box-shadow: inset -4px 4px 6px rgba(0,0,0,.1);
+@mixin text-emboss {
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  -webkit-text-stroke: 1px rgba($color-light, .05);
 }
 
 
@@ -28,7 +28,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $color-accent;
-  border: 20px solid $color-accent;
+  border: 15px solid $color-accent;
 
   @media screen and (min-width: 1280px){
     border-width: 40px;
@@ -48,22 +48,24 @@ em, cite, i {
 
 h1, h3 {
   color: $color-dark;
-  font-family: "Lora";
+  font-family: "Playfair Display";
+  letter-spacing: 1px;
   margin: 24px 0;
 }
 
 h6 {
+  @include text-emboss;
   font-size: 2em;
   color: $white;
   text-transform: uppercase;
   text-align: left;
-  text-shadow: $emboss;
   padding-left: 18px;
-  margin: 10px 0 20px;
+  margin: 10px 0 0;
 
   @media screen and (min-width: 1280px){
     font-size: 4em;
     padding-left: 38px;
+    margin: 10px 0 20px;
   }
 }
 
@@ -121,6 +123,7 @@ section {
 
   @media screen and (min-width: 1280px){
     padding-top: 5px;
+    border: 1px solid rgba($color-light, .1);
   }
 }
 
@@ -139,6 +142,6 @@ details {
 summary {
   @extend .link-primary;
   font-size: 1.25em;
-  padding: 20px 0;
+  padding-bottom: 20px;
   cursor: pointer;
 }
