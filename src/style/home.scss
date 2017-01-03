@@ -1,12 +1,6 @@
 @import "theme";
 
 .header {
-  padding: 20px;
-
-  @media screen and (min-width: 1280px){
-    padding: 40px;
-  }
-
   .logo {
     color: $white;
     font-weight: bold;
@@ -26,7 +20,7 @@
     #mandarin {
       @include text-emboss;
       display: inline-block;
-      padding-left: 10px;
+      padding-left: 5px;
       font-size: 1em;
     }
 
@@ -39,11 +33,12 @@
 
       p {
         font-size: 1.5em;
-        padding-top: 6px;
+        padding-top: 22px;
       }
 
       #mandarin {
         font-size: 1.25em;
+        padding-left: 10px;
       }
     }
   }
@@ -82,50 +77,47 @@
       }
 
       a {
-        @extend .link-primary;
+        @extend .link;
       }
     }
 
     .main-nav {
-      @extend .link-secondary;
+      @extend .link;
       margin-top: 40px;
     }
   }
 }
 
 #projects {
-  margin: 40px 0 80px;
-
   .row {
     display: inline-block;
-    border-bottom: 10px solid $color-accent;
+    border-bottom: 5px solid $color-accent;
+
+    &:last-child {
+      border: 0;
+    }
 
     @media screen and (min-width: 1280px){
       display: flex;
-      padding-bottom: 40px;
+      padding-bottom: 80px;
       border: 0;
-
-      &:last-child {
-        padding-bottom: 80px;
-      }
     }
 
     .work-text {
       @media screen and (min-width: 1280px){
         width: 20%;
-        padding-right: 40px;
       }
 
       .mistake {
-        @extend .link-secondary;
+        @extend .link;
         background-color: rgba(255, 255, 255, .8);
-        padding: 0 20px;
 
         @media screen and (min-width: 1280px){
           @include shadow-lg;
           border-top: 5px solid $color-accent;
           border-left: 2px solid rgba($color-light, .1);
           margin-top: 55px;
+          padding: 0 20px 20px;
           left: 80px;
           position: absolute;
           width: 17%;
@@ -135,8 +127,8 @@
           color: $color-medium;
         }
 
-        ul {
-          margin-top: 20px;
+        a {
+          margin: 20px 0;
           line-height: 2em;
         }
       }
@@ -145,15 +137,14 @@
     .work-image {
       display: inline-block;
       padding: 20px 0;
-      // border-top: 5px solid $color-primary;
 
       @media screen and (min-width: 1280px){
         box-shadow: inset 4px 4px 4px rgba(0,0,0,.1), inset -4px -4px 4px rgba(0,0,0,.1);
         border: none;
         background-color: $color-accent;
         width: 80%;
-        margin-right: 40px;
         padding: 60px 40px 0 100px;
+        margin-right: 20px;
       }
 
       img {
@@ -167,32 +158,39 @@
 
 #about {
   .intro {
-    padding: 40px;
-    display: flex;
+    display: inline-block;
 
     #head {
-      float: left;
-      display: inline-block;
+      display: block;
 
       img {
-        width: 200px;
-        height: 200px;
+        width: 250px;
         border-radius: 50%;
       }
     }
 
     .objective {
-      float: right;
-      margin-left: 40px;
-
       p {
         display: block;
         line-height: 2em;
       }
 
       ul {
-        @extend .link-secondary;
+        @extend .link;
         padding: 0;
+      }
+    }
+
+    @media screen and (min-width: 1280px){
+      display: flex;
+
+      #head {
+        float: left;
+      }
+
+      .objective {
+        float: right;
+        margin-left: 40px;
       }
     }
   }
