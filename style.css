@@ -62,10 +62,9 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   padding-bottom: 3px;
-  border-bottom: 2px solid #ff614d; }
+  border-bottom: 1px solid #ff614d; }
   .link a:hover, summary a:hover, .header .banner .headline a a:hover, .header .banner .main-nav a:hover, #projects .row .work-text .mistake a:hover, #about .intro .objective ul a:hover {
-    transition: position .1s;
-    border-bottom: 4px solid #ff614d; }
+    border-bottom: 3px solid #ff614d; }
 
 section {
   padding: 20px;
@@ -76,6 +75,12 @@ section {
       margin-bottom: 40px;
       padding: 40px;
       border: 1px solid rgba(153, 153, 153, 0.1); } }
+
+footer {
+  text-align: center; }
+  footer .copyright {
+    font-size: .75em;
+    margin-bottom: 0; }
 
 span {
   display: inline-flex; }
@@ -97,9 +102,6 @@ details {
 summary {
   padding-bottom: 20px;
   cursor: pointer; }
-  @media screen and (min-width: 1280px) {
-    summary {
-      font-size: 1.25em; } }
 
 .header .logo {
   color: #fff;
@@ -221,6 +223,11 @@ summary {
         float: left; }
       #about .intro .objective {
         float: right;
-        margin-left: 40px; } }
+        margin-left: 40px; }
+        #about .intro .objective a {
+          color: #ff614d;
+          text-decoration: none; } }
+  #about .intro .contact {
+    margin-top: 40px; }
 
 /*# sourceMappingURL=style.css.map */
