@@ -162,22 +162,73 @@
 
     #head {
       display: block;
+      position: relative;
 
       img {
         width: 250px;
         border-radius: 50%;
       }
+
+      #gfy {
+        position: absolute;
+        text-align: center;
+        margin-top: 420px;
+
+        img {
+          height: 250px;
+          border-radius: 50%;
+        }
+
+        a {
+          position: absolute;
+          left: 0;
+          top: 40%;
+          font-size: 1.5em;
+          color: yellow;
+          text-decoration: underline;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
     }
 
-    .objective {
-      p {
-        display: block;
-        line-height: 2em;
+    .bio {
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: $color-primary;
+        text-decoration: none;
       }
 
       ul {
-        @extend .link;
-        padding: 0;
+        list-style: circle;
+        padding-left: 10px;
+        line-height: 1.75em;
+      }
+
+      li {
+        padding-bottom: 20px;
+      }
+
+      #wormhole {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .contact {
+        ul {
+          @extend .link;
+          padding: 0;
+        }
+
+        li {
+          padding-bottom: 10px;
+        }
       }
     }
 
@@ -186,41 +237,34 @@
 
       #head {
         float: left;
+
+        #gfy {
+          margin-top: 0;
+          top: 0;
+        }
       }
 
-      .objective {
+      .bio {
         float: right;
         margin-left: 40px;
 
-        a {
-          color: $color-primary;
-          text-decoration: none;
+        h3 {
+          margin-top: 0;
+        }
+
+        p {
+          display: block;
+          line-height: 2em;
+        }
+
+        li {
+          padding-bottom: 10px;
+        }
+
+        .contact {
+          margin-top: 20px;
         }
       }
     }
-
-    .contact {
-      margin-top: 40px;
-    }
   }
 }
-
-
-// #gfy {
-//   position: absolute;
-//
-//   .wormhole {
-//     position: absolute;
-//     text-align: center;
-//
-//     a {
-//       font-size: 1.5em;
-//       color: yellow;
-//       text-decoration: underline;
-//
-//       &:hover {
-//         color: white;
-//       }
-//     }
-//   }
-// }

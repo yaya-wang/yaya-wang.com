@@ -16,15 +16,16 @@
     <link href="https://fonts.googleapis.com/css?family=Karla|Playfair+Display" rel="stylesheet">
 
     <script>
+      window.onload = function() {
+        var gfy = document.getElementById('gfy');
+        document.getElementById('gfy').style.visibility = 'hidden';
+        document.getElementById('wormhole').onclick = wormhole;
+      };
+
       function wormhole(){
         document.getElementById('gfy').style.visibility = 'visible';
       }
 
-      window.onload = function() {
-        var head = document.getElementById('head');
-        document.getElementById('gfy').style.visibility = 'hidden';
-        document.getElementById('head').onclick = wormhole;
-      };
     </script>
   </head>
 
@@ -151,7 +152,7 @@
         <div class="work-image">
           <img src="src/work_graphics/coffeed.jpg">
           <details>
-            <summary>See more graphics / branding designs</summary>
+            <summary>See more graphic designs</summary>
 
             <h3>Sundays Logo Design</h3>
             <p>Sundays is a nail studio focusing on wellness. The logo aims to resonate with the brand's high-quality, clean, and simple image.
@@ -186,23 +187,25 @@
       <div class="intro">
         <div id="head">
           <img src="src/_main/me.jpg">
+          <div id="gfy">
+            <img src="http://i.imgur.com/DYPND4X.gif">
+            <a href="gfy.html">ENTER THE WORMHOLE</a>
+          </div>
         </div>
 
-        <!-- <div id="gfy"> -->
-          <!-- <img src="http://i.imgur.com/DYPND4X.gif" height="180px"> -->
-          <!-- <div class="wormhole">
-            <a href="gfy.html">ENTER THE WORMHOLE</a>
-          </div> -->
-        <!-- </div> -->
+        <div class="bio">
+          <h3>Product Designer focusing on UX, strategy, and witty ideas.</h3>
+          <p>I solve problems by connecting dots between observations, information, and inspirations from hisotry and nature.</p>
 
-        <div class="objective">
-          <p><b>I optimize experiences through observing little things yet create simple and impactful designs.</b></p>
+          <ul>
+            <li>Currently a product designer at <a href="http://www.condenast.com">Condé Nast</a> designing a CMS for editors across 12 brands</li>
+            <li>3 years of experience in user-centered design and research working in multi-disciplinary teams</li>
+            <li>A Syracuse University Industrial & Interaction Design graduate</li>
+            <li id="wormhole">
+              Delightfully nerdy
+            </li>
+          </ul>
 
-          <p>
-            - A Syracuse University Industrial & Interaction Design graduate.</br>
-            - 2 years of experience in user-centered design and research working in multi-disciplinary teams.</br>
-            - Currently a product designer at <a href="http://www.condenast.com">Condé Nast</a> designing a CMS for editors across 12 brands.
-          </p>
           <div class="contact">
             <ul>
               <li>
