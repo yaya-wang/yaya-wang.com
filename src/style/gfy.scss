@@ -1,7 +1,6 @@
 body {
 	width: 80%;
 	margin: 30px auto;
-	background: url(http://i.imgur.com/DYPND4X.gif);
 	background-size: 100%;
 	background-attachment: fixed;
 	background-position: center;
@@ -36,11 +35,23 @@ a {
 	font-size: 1em;
 	color: #fff;
 	text-decoration: none;
+
+	&:hover {
+		color: yellow;
+		text-decoration: underline;
+	}
 }
 
-a:hover {
-	color: yellow;
-	text-decoration: underline;
+video {
+	background-size: cover;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	left: 0;
+	top: 0;
+	position: fixed;
+	z-index: -999;
 }
 
 .top {
@@ -128,7 +139,7 @@ a:hover {
 .square {
 	float: left;
 	width: 35vw;
-	height: 25vw;
+	height: 40vw;
 	box-shadow: 10px 10px #ccc;
 }
 
@@ -137,26 +148,26 @@ a:hover {
 	right: 10%;
 	width: 45vw;
 	border-left: 20vw solid transparent;
-	border-bottom: 25vw solid #fff;
+	border-bottom: 40vw solid #fff;
 	box-shadow: 10px 10px #ccc;
 	clear: both;
 }
-.triangle-arrow {
+#triangle-arrow {
 	position: absolute;
-	left: 40%;
+	left: 36%;
 	text-align: center;
 	margin: 3% auto;
-	z-index: 100000;
+	z-index: 999;
 }
 
 .text {
 	left: 10%;
-	margin: 3% 0 5% 0;
+	margin: 15% 0 5% 0;
 	text-align: left;
 	position: inherit;
 	width: 70%;
-	height: 22vw;
-	overflow: scroll; 
+	height: 32vw;
+	overflow: scroll;
 }
 
 .bottom {
@@ -170,15 +181,15 @@ a:hover {
 	height: 50vw;
 	margin: 150px auto;
 	border-radius: 50%;
-	border: solid 5px #fff; 
+	border: solid 5px #fff;
 	box-shadow: 10px 10px #ccc;
 	overflow: scroll;
-	background: #000; 
+	background: #000;
 }
 
 #circle-arrow {
 	position: absolute;
-	left: 50%;
+	left: 48%;
 	text-align: center;
 	margin: 1% auto;
 }
@@ -206,10 +217,10 @@ footer {
 .rectangle {
 	width: 100%;
 	text-align: center;
-	margin: 0 auto; 
+	margin: 0 auto;
 	padding: 20px 0;
 	background: #000;
-	border: solid 5px #fff; 
+	border: solid 5px #fff;
 	box-shadow: 10px 10px #ccc;
 }
 

@@ -12,7 +12,7 @@ html {
       border-width: 40px; } }
 
 body {
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
   font-size: 18px;
   font-family: "Karla", sans-serif;
@@ -108,7 +108,7 @@ details {
       details p {
         margin-bottom: 5px; }
       details img:last-child {
-        margin-bottom: 40px; } }
+        margin-bottom: 60px; } }
 
 summary {
   cursor: pointer; }
@@ -228,6 +228,12 @@ summary {
       display: none; }
   #about .intro .bio h3 {
     margin-bottom: 10px; }
+  #about .intro .bio h4 {
+    font-size: .875em;
+    margin-bottom: 0; }
+  #about .intro .bio p {
+    margin-top: 5px;
+    line-height: 2em; }
   #about .intro .bio a {
     color: #ff614d;
     text-decoration: none; }
@@ -237,6 +243,8 @@ summary {
     line-height: 1.75em; }
   #about .intro .bio li {
     padding-bottom: 20px; }
+  #about .intro .bio .resume {
+    margin: 40px 0; }
   #about .intro .bio .contact ul {
     padding: 0; }
   #about .intro .bio .contact li {
@@ -250,10 +258,14 @@ summary {
         #about .intro #head #gfy {
           display: block;
           position: absolute;
-          top: 0; }
-          #about .intro #head #gfy img {
-            height: 250px;
-            border-radius: 50%; }
+          top: 0;
+          width: 250px;
+          height: 250px;
+          overflow: hidden;
+          border-radius: 50%; }
+          #about .intro #head #gfy video {
+            height: 100%;
+            margin-left: -25%; }
           #about .intro #head #gfy a {
             position: absolute;
             left: 0;
@@ -269,9 +281,6 @@ summary {
         margin-left: 40px; }
         #about .intro .bio h3 {
           margin-top: 0; }
-        #about .intro .bio p {
-          display: block;
-          line-height: 2em; }
         #about .intro .bio li {
           padding-bottom: 10px; }
         #about .intro .bio #wormhole:hover {
