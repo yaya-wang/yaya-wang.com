@@ -143,7 +143,7 @@
         border: none;
         background-color: $color-accent;
         width: 80%;
-        padding: 60px 40px 0 100px;
+        padding: 60px 40px 20px 100px;
         margin-right: 20px;
       }
 
@@ -162,7 +162,6 @@
 
     #head {
       display: block;
-      position: relative;
 
       img {
         width: 250px;
@@ -170,27 +169,7 @@
       }
 
       #gfy {
-        position: absolute;
-        text-align: center;
-        margin-top: 420px;
-
-        img {
-          height: 250px;
-          border-radius: 50%;
-        }
-
-        a {
-          position: absolute;
-          left: 0;
-          top: 40%;
-          font-size: 1.5em;
-          color: yellow;
-          text-decoration: underline;
-
-          &:hover {
-            color: white;
-          }
-        }
+        display: none;
       }
     }
 
@@ -214,12 +193,6 @@
         padding-bottom: 20px;
       }
 
-      #wormhole {
-        &:hover {
-          cursor: pointer;
-        }
-      }
-
       .contact {
         ul {
           @extend .link;
@@ -232,15 +205,36 @@
       }
     }
 
-    @media screen and (min-width: 1280px){
+    @media screen and (min-width: 768px){
       display: flex;
 
       #head {
         float: left;
+        position: relative;
 
         #gfy {
-          margin-top: 0;
+          display: block;
+          position: absolute;
           top: 0;
+
+          img {
+            height: 250px;
+            border-radius: 50%;
+          }
+
+          a {
+            position: absolute;
+            left: 0;
+            top: 40%;
+            font-size: 1.5em;
+            color: yellow;
+            text-decoration: underline;
+            text-align: center;
+
+            &:hover {
+              color: white;
+            }
+          }
         }
       }
 
@@ -259,6 +253,12 @@
 
         li {
           padding-bottom: 10px;
+        }
+
+        #wormhole {
+          &:hover {
+            cursor: pointer;
+          }
         }
 
         .contact {

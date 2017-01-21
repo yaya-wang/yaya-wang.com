@@ -36,10 +36,21 @@ html {
 }
 
 body {
-  margin: 0;
+  max-width: 1600px;
+  margin: 0 auto;
   font-size: 18px;
   font-family: "Karla", sans-serif;
   color: $color-medium;
+
+  ::selection {
+    background-color: $color-primary;
+    color: $white;
+  }
+
+  ::-moz-selection {
+    background-color: $color-primary;
+    color: $white;
+  }
 }
 
 em, cite, i {
@@ -155,9 +166,13 @@ details {
   @media screen and (min-width: 1280px){
     padding: 0;
 
+    p {
+      margin-bottom: 5px;
+    }
+
     img {
       &:last-child {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
       }
     }
   }
