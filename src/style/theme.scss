@@ -7,11 +7,11 @@ $color-light: #999999;
 $white: #fff;
 
 .shadow {
-  box-shadow: 6px 6px 2px rgba(0, 0, 0, .1);
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, .1);
 }
 
 @mixin shadow-lg {
-  box-shadow: 8px 8px 6px rgba(0, 0, 0, .1);
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, .1);
 }
 
 @mixin shadow-inner {
@@ -30,7 +30,7 @@ html {
   background-color: $color-accent;
   border: 15px solid $color-accent;
 
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1279px){
     border-width: 40px;
   }
 }
@@ -72,7 +72,7 @@ h6 {
   line-height: .5;
   margin: 20px 0;
 
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1279px){
     font-size: 4em;
     margin: 0 0 40px;
   }
@@ -81,7 +81,7 @@ h6 {
 p {
   line-height: 1.5em;
 
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1279px){
     line-height: 1.25em;
     margin: 0 0 15px;
   }
@@ -128,7 +128,7 @@ section {
   background-color: white;
   margin-bottom: 15px;
 
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1279px){
     margin-bottom: 40px;
     padding: 40px;
     border: 1px solid rgba($color-light, .1);
@@ -163,7 +163,7 @@ details {
     color: $color-primary;
   }
 
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1279px){
     padding: 0;
 
     p {
@@ -182,7 +182,7 @@ summary {
   @extend .link;
   cursor: pointer;
 
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1279px){
     padding-bottom: 20px;
   }
 }
