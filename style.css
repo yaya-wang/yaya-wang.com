@@ -9,7 +9,7 @@ html {
   border: 15px solid #ffe9e6; }
   @media screen and (min-width: 1280px) {
     html {
-      border-width: 40px; } }
+      border-width: 30px; } }
 
 body {
   max-width: 1400px;
@@ -27,9 +27,14 @@ body {
 em, cite, i {
   font-style: italic; }
 
-h1, h3 {
+h1 {
   color: #1a1a1a;
-  font-family: "Playfair Display";
+  font-family: "Lora";
+  letter-spacing: .0em;
+  margin: 20px 0; }
+
+h3 {
+  color: #1a1a1a;
   margin: 20px 0; }
 
 h6 {
@@ -193,7 +198,7 @@ summary {
         border-left: 2px solid rgba(153, 153, 153, 0.1);
         margin-top: 55px;
         padding: 0 20px 20px;
-        left: 80px;
+        left: 70px;
         position: absolute;
         width: 17%; } }
     #projects .row .work-text .mistake p {
