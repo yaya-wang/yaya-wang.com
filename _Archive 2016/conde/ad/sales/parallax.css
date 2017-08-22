@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+/*.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin:0;
+  position: absolute;
+}*/
+
+#content1 { 
+  background: url(article_1.jpg) 50% 0 no-repeat;
+  min-height: 143px; 
+  border-bottom: 1px solid #eeeeee;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  width: 100%;
+  margin: 0 auto; 
+}
+ 
+.parallax-window { 
+/*  background: url(ad_tiffany_3.png) no-repeat fixed;
+  background-size: 100%; 
+  background-position: 50% 95px;*/
+  min-height: 380px; 
+  position: relative; 
+  z-index: -9999;
+}
+
+#content2 { 
+  background: url(article_2.jpg) 50% 0 no-repeat; 
+  width: 100%;
+  height: 5144px; 
+  margin: 0 auto; 
+  max-width: 1920px; 
+  position: relative; 
+}
+
+
+#content3 { 
+  background: url(article_3.jpg) 50% 0 no-repeat; 
+  width: 100%;
+  height: 2770px; 
+  margin: 0 auto; 
+  max-width: 1920px; 
+  position: relative; 
+}

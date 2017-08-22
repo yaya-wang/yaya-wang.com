@@ -1,6 +1,6 @@
 /* Global Stylesheet*/
 .shadow, section {
-  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.1); }
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); }
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
   font-size: 18px;
   font-family: "Karla", sans-serif;
-  color: #666666; }
+  color: #4c4c4c; }
   body ::selection {
     background-color: #ff614d;
     color: #fff; }
@@ -28,16 +28,16 @@ em, cite, i {
   font-style: italic; }
 
 h1 {
-  color: #1a1a1a;
-  font-family: "Lora";
+  color: #141414;
+  font-family: "Source Serif Pro";
   margin: 20px 0; }
 
 h3 {
-  color: #1a1a1a;
+  color: #141414;
   margin: 20px 0; }
 
 h6 {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   -webkit-text-stroke: 1px rgba(153, 153, 153, 0.05);
   font-size: 2em;
   color: #fff;
@@ -87,7 +87,7 @@ section {
     section {
       margin-bottom: 40px;
       padding: 40px;
-      border: 1px solid rgba(153, 153, 153, 0.1); } }
+      border: 1px solid rgba(153, 153, 153, 0.2); } }
 
 footer {
   text-align: center; }
@@ -126,14 +126,14 @@ summary {
   .header .logo img {
     width: 30px;
     padding-right: 5px;
-    filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.15)); }
+    filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.4)); }
   .header .logo p {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
     -webkit-text-stroke: 1px rgba(153, 153, 153, 0.05);
     display: inline-block;
     font-size: 1em; }
   .header .logo #mandarin {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
     -webkit-text-stroke: 1px rgba(153, 153, 153, 0.05);
     display: inline-block;
     padding-left: 5px;
@@ -201,7 +201,7 @@ summary {
         position: absolute;
         width: 17%; } }
     #projects .row .work-text .mistake p {
-      color: #666666; }
+      color: #4c4c4c; }
     #projects .row .work-text .mistake a {
       margin: 20px 0;
       line-height: 2em; }

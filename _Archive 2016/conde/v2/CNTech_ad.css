@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+}
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin:0;
+  position: absolute;
+}
+/*.parallax_layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}*/
+
+/*#content{
+  width: 100%;
+  position: relative; 
+}
+
+#ad-banner{
+  text-align: center;
+  height: 415px;
+  position: absolute; 
+}*/
+
+#content1 { 
+  background: url(sample_cnt1.png) 50% 0 no-repeat fixed; min-height: 800px; 
+  width: 100%;
+  margin: 0 auto; 
+}
+ 
+/*#content img {
+  position: absolute; 
+  text-align: center; 
+  top: 150px; 
+  width: 100%; 
+}
+ */
+#ad-banner { 
+  background: url(sample_ad_banner.jpg) fixed; min-height: 415px; 
+  height: 415px; 
+  margin: 0 auto; 
+  width: 100%;
+  position: relative; 
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  z-index: -9999;
+}
+ 
+/*#ad-banner img { 
+  height: 458px; 
+  position: absolute; 
+  text-align: center; 
+  top: 150px; 
+  width: 100%; 
+}*/
+
+#content2 { 
+  background: url(sample_cnt2.png) 50% 0 no-repeat; min-height: 1000px; 
+  width: 100%;
+  height: 7215px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+}
