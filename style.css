@@ -218,7 +218,6 @@ summary {
         margin-right: 20px; } }
     #projects .row .work-image img {
       width: 100%;
-      display: inherit;
       padding-bottom: 20px; }
     #projects .row .work-image video {
       width: 100%;
