@@ -334,6 +334,7 @@ summary {
   text-decoration: none;
 }
 #about .intro .bio ul {
+  margin-top: 40px;
   list-style: circle;
   padding-left: 10px;
   line-height: 1.75em;
