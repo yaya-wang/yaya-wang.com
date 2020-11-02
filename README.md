@@ -6,6 +6,6 @@ Find the easter egg on my site, and you will see the dark matter inside Yaya's b
 
 ```npm install -g sass```
 
-and run
+navigate to ```src/style/home.scss``` and run
 
 ```sass --watch main.scss:../../style.css```
