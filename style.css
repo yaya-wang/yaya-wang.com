@@ -97,6 +97,7 @@ a:focus {
   text-decoration: none;
   padding-bottom: 3px;
   border-bottom: 1px solid #ff614d;
+  line-height: 1.75em;
 }
 .link a:hover, #about .intro .bio .contact ul a:hover, #projects .row .work-text .mistake a:hover, .header .banner .main-nav a:hover, .header .banner .headline a a:hover, summary a:hover {
   border-bottom: 3px solid #ff614d;
@@ -292,7 +293,7 @@ summary {
 }
 #projects .row .work-image img {
   width: 100%;
-  display: inherit;
+  display: block;
   padding-bottom: 20px;
 }
 #projects .row .work-image video {
